@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Changa:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+/* 
+font-family: 'Acme', sans-serif;
+font-family: 'Changa', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+:root {
+    --dark-pink-one: #E02C6D;
+    --dark-two: #7a7a7ac4;
+    --main-color: #784cfb;
+    --light-one: rgb(240, 239, 239);
+    --light-two: #f9fafb;
+    --light-three: #f6f7fb;
+  }
+
+
+
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+/*-------------------
+    Universal Style
+ -------------------- */
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.container{
+    width: 85rem;
+    margin:10px auto;
+    /* background-color: aqua; */
+}
+/*-------------------
+    Header-Navigation
+ -------------------- */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 30px;
+    align-items: center;
+    height: 80px;
+}
+.nav-list ul{
+    display: flex;
+}
+.nav-list ul li{
+    margin-right: 20px;
+    padding: 5px 15px;
+    transition: all .5s;   
+}
+.nav-list ul li a{
+    color: black;
+    padding: 5px 5px;
+    
+}
+
+.nav-item:hover{
+    background-color: var(--light-one);
+    border-radius: 3px;
+}
+/*-------------------
+    Header-section
+ -------------------- */
+.top-section{
+    height: calc(90vh - 80px);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+
+.top-section-left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.top-section-left h1{
+    font-size: 40px;
+    padding: 20px;
+}
+.top-section-left p{
+    padding: 0px 20px;
+    line-height: 1.7em;
+    margin-bottom: 10px
+}
+.top-section-left a{
+    margin-left: 20px;
+    margin-top: 16px;
+    padding: 10px 20px;
+    display: flex;
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    color: whitesmoke;
+    background-color: var(--dark-pink-one);
+    align-items: center;
+    transition: all .5s;
+}
+
+.top-section-left a:hover{
+    background-color: #f03f80;
+}
+
+.top-section-left a i{
+    margin-left: 15px;
+}
+.top-section-right img{
+    width: 520px;
+    height: 450px;
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+
+/*-------------------
+    Collection-section
+ -------------------- */
+ .companies{
+     display: flex;
+     flex-wrap: wrap;
+     padding: 30px;
+     justify-content: space-around;
+     flex-flow: wrap;
+     margin-top: 20px;
+     background-color: antiquewhite;
+ }
+ .company{
+     margin-left: 80px;
+ }
+
+ .all-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 30px;
+}
+ .item{
+    width: 329px;
+    height: 486px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: azure;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+ }
+ .item-info{
+     padding-bottom: 10px;
+ }
+.item-info h3{
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 10px;
+}
+.price{
+    font-size: 24px;
+}
+
+.item-info p,
+.item-info i{
+    margin-top: 5px;
+}
+.rating i{
+    color: #e2bc3f;
+    margin-right: 2.5px;
+}
+ .item-img img{
+    width: 300px;
+    height: 256px;
+ }
+
+/*------------------
+Resposive Media Quries 
+ -------------------*/
+
+ /* Mobile Device*/
+ @media only screen and (max-width: 672px)  {
+    .container{
+        width: 100%;
+    }
+    .header-container{
+        display: none;
+    }
+    .top-section,.all-items{
+        grid-template-columns:1fr;
+        height: fit-content;
+        width: 100%;
+    }
+    .top-section-left p{
+        text-align: justify;
+    }
+    .top-section-left h1{
+        font-size: 28px;
+    }
+    .top-section-right img{
+       width: 250px;
+       height: auto;
+        top: 0px;
+        left: 0px;
+    }
+    .top-section-left{
+        order: 2;
+        padding: 0;
+    }
+}
+ /* Tables */
