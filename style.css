@@ -130,10 +130,10 @@ li{
     top company
  -------------------- */
 
- .top-company-title{
+ .title{
      margin: 10px 10px;
  }
- .top-company-title h2{
+ .title h2{
      text-transform: uppercase;
      font-size: 24px;
      color: var(--dark-pink-one);
@@ -150,6 +150,7 @@ li{
      justify-items: center;
     align-items: center;
     border: 1px solid rgb(179, 178, 178);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
  }
  .company{
      margin-left: 10px;
@@ -158,12 +159,16 @@ li{
     }
 
 
+
+.collection-section{
+    margin-top: 70px;
+}
  .all-items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
     grid-column-gap: 20px;
-    padding: 30px;
+    padding: 10px;
 }
  .item{
     width: 329px;
@@ -172,6 +177,13 @@ li{
     border-radius: 10px;
     background-color: azure;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all .5s;
+    
+ }
+
+ .item:hover{
+    transform: translateY(-5px);
  }
  .item-info{
      padding-bottom: 10px;
@@ -236,7 +248,7 @@ Resposive Media Quries
         margin-top: 100px;
     }
 
-    .top-company-title{
+    .title{
         display: flex;
         justify-content: center;
     }
@@ -247,5 +259,10 @@ Resposive Media Quries
     .company{
         margin-left: 8px;
     }
+
+    .all-items{
+        justify-items: center;
+    }
 }
+
  /* Tables */
