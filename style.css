@@ -40,6 +40,15 @@ li{
     margin:10px auto;
     /* background-color: aqua; */
 }
+
+.title{
+    margin: 10px 10px;
+}
+.title h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: var(--dark-pink-one);
+}
 /*-------------------
     Header-Navigation
  -------------------- */
@@ -157,18 +166,6 @@ li{
 /*-------------------
     top company
  -------------------- */
-
- .title{
-     margin: 10px 10px;
- }
- .title h2{
-     text-transform: uppercase;
-     font-size: 24px;
-     color: var(--dark-pink-one);
- }
-/*-------------------
-    Collection-section
- -------------------- */
  .companies{
      display: grid;
      grid-template-columns: repeat(7,1fr);
@@ -176,7 +173,9 @@ li{
      padding: 30px;
      margin: 10px;
      justify-items: center;
-    border: 1px solid rgb(179, 178, 178);
+     border: 1px solid;
+     border-image-slice: 1;
+    border-image-source: linear-gradient(to left,#f1f0f0, #bfc0bf, #f5f5f5);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
  }
  .company{
@@ -185,7 +184,9 @@ li{
      height: auto;
     }
 
-
+/*-------------------
+    Collection-section
+ -------------------- */
 
 .collection-section{
     margin-top: 70px;
@@ -252,7 +253,9 @@ li{
 }
 
 
-/* Gallery */
+/*-------------------
+        Gallery 
+ -------------------*/
 
 .gallery-title{
     margin-top: 90px;
@@ -322,6 +325,9 @@ li{
     transition: all .8s;
 }
 
+/* ----------------
+    Footer
+--------------- */
 footer{
     width: 100%;
     background-color: var(--dark-two);
@@ -363,11 +369,14 @@ footer{
     border: .5px solid var(--main-color);
     margin: 5px 10px;
 }
+
+
 /*------------------
 Resposive Media Quries 
  -------------------*/
 
- /* Mobile Device*/
+ /*---- Mobile Device------*/
+
  @media only screen and (max-width: 688px)  {
     .container{
         width: 100%;
@@ -441,7 +450,7 @@ Resposive Media Quries
     }
 }
 
- /* Tables */
+ /*------- Tables--------- */
 
  @media screen and (min-device-width: 689px) and (max-device-width: 992px)  {
     .container{
@@ -513,7 +522,9 @@ Resposive Media Quries
         justify-items: center;
     }
 }
-
+/* -------------------
+     Animations
+----------------- */
 @keyframes imgSclaing {
     0%{
         transform: scale(1);
