@@ -419,7 +419,7 @@ Resposive Media Quries
         font-size: 28px;
     }
     .top-section-right img{
-       width: 250px;
+       width: 280px;
        height: auto;
         top: 0px;
         left: 0px;
@@ -443,6 +443,9 @@ Resposive Media Quries
     }
     .company{
         margin-left: 8px;
+    }
+    .collection-title{
+        margin-left: 15px;
     }
 
     .all-items{
@@ -516,6 +519,9 @@ Resposive Media Quries
     }
     .company{
         margin-left: 8px;
+    }
+    .collection-title{
+        margin-left: 15px;
     }
 
     .all-items{
